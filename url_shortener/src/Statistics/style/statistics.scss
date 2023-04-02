@@ -1,0 +1,201 @@
+@import '../../style/App';
+
+section {
+    background-color: $grayish-violent-background;
+    @include flex-container;
+    flex-direction: column;
+    width: 100%;
+}
+
+.advanced {
+    position: relative;
+    margin-top: 7em;
+    text-align: center;
+    width: 45%;
+
+    h1 {
+        font-size: 2.5rem;
+        line-height: 2.5em;
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: $grayish-violent;
+        line-height: 1.8em;
+    }
+}
+
+.line {
+    position: absolute;
+    width: 55%;
+    height: 0.5em;
+    background-color: $color-cyan;
+    margin-top: 7em;
+}
+
+
+.brand {
+    position: relative;
+    @include flex-container;
+    padding: $page-padding;
+    justify-content: space-between;
+    margin-top: -2em;
+
+    .image {
+        @include flex-container;
+        background-color: $dark-violent;
+        border-radius: 50%;
+        width: 4.5em;
+        height: 4.5em;
+        margin-top: -4.5em;
+        margin-bottom: 2.5em;
+
+        img {
+            width: 2.5em;
+        }
+    }
+
+    .card {
+        background-color: $color-white;
+        width: 27%;
+        height: 14em;
+        padding: 1.5em;
+        border-radius: 8px;
+
+        h2 {
+            font-size: 1.4em;
+            margin-bottom: 0.7em;
+        }
+        
+        p {
+            font-size: 0.95em;
+            color: $grayish-violent;
+            line-height: 1.8em;
+        }
+    }
+
+    .brand2 {
+        margin-top: 6em;
+    }
+
+    .brand3 {
+        margin-top: 12em;
+    }
+}
+
+.boost {
+    background-image: url(../../images/bg-boost-desktop.svg);
+    background-color: $dark-violent;
+    object-fit: fill;
+    width: 100%;
+    height: 9.5em;
+    @include flex-container;
+    flex-direction: column;
+    color: $color-white;
+    font-size: 1.65em;
+    font-weight: bolder;
+    margin-top: 100px;
+    text-align: center;
+
+    button {
+        @include button;
+        width: 9em;
+        height: 2.8em;
+        font-size: 0.8em;
+
+        &:hover {
+            opacity: 1;
+            background-color: hsl(180, 52%, 68%);
+        }
+
+        &:active {
+            background-color: $color-cyan;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .advanced {
+        width: 85%;
+    }
+    
+    .line {
+        position: absolute;
+        width: 50em;
+        height: 0.5em;
+        transform: rotate(90deg);
+    }
+    
+    .brand {
+        position: relative;
+        @include flex-container;
+        flex-direction: column;
+        padding: 0;
+        justify-content: center;
+        width: 80%;
+        margin-top: 7em;
+    
+        .image {
+            width: 6.5em;
+            height: 6.5em;
+            margin-top: -70px;
+            margin-bottom: 30px;
+    
+            img {
+                width: 3em;
+            }
+        }
+    
+        .card {
+            @include flex-container;
+            flex-direction: column;
+            width: 100%;
+            height: inherit;
+            padding: 3.5em 1.5em;
+            margin-top: 0em;
+    
+            h2 {
+                font-size: 1.6em;
+                margin-bottom: .7em;
+            }
+            
+            p {
+                font-size: 1.2em;
+                line-height: 1.9em;
+                text-align: center;
+                width: 85%;
+            }
+        }
+    
+        .brand2 {
+            margin-top: 7em;
+        }
+    
+        .brand3 {
+            margin-top: 7em;
+        }
+    }
+    
+    .boost {
+        background-image: url(../../images/bg-boost-mobile.svg);
+        height: 7em;
+        justify-content: space-between;
+        padding: 5em 0em;
+    
+        button {
+            width: 10em;
+            height: 3em;
+            font-size: 0.9em;
+            margin: 0;
+
+            &:hover {
+                opacity: 1;
+                background-color: hsl(180, 52%, 68%);
+            }
+
+            &:active {
+                background-color: $color-cyan;
+            }
+        }
+    }
+}

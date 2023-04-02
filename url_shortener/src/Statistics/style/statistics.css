@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
+}
+section {
+  background-color: hsl(270, 20%, 92%);
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: 100%;
+}
+
+.advanced {
+  position: relative;
+  margin-top: 7em;
+  text-align: center;
+  width: 45%;
+}
+.advanced h1 {
+  font-size: 2.5rem;
+  line-height: 2.5em;
+}
+.advanced p {
+  font-size: 1.5rem;
+  color: hsl(257, 7%, 63%);
+  line-height: 1.8em;
+}
+
+.line {
+  position: absolute;
+  width: 55%;
+  height: 0.5em;
+  background-color: hsl(180, 66%, 49%);
+  margin-top: 7em;
+}
+
+.brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-evenly;
+  padding: 3em 7.8em;
+  justify-content: space-between;
+  margin-top: -2em;
+}
+.brand .image {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-evenly;
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  width: 4.5em;
+  height: 4.5em;
+  margin-top: -4.5em;
+  margin-bottom: 2.5em;
+}
+.brand .image img {
+  width: 2.5em;
+}
+.brand .card {
+  background-color: #ffffff;
+  width: 27%;
+  height: 14em;
+  padding: 1.5em;
+  border-radius: 8px;
+}
+.brand .card h2 {
+  font-size: 1.4em;
+  margin-bottom: 0.7em;
+}
+.brand .card p {
+  font-size: 0.95em;
+  color: hsl(257, 7%, 63%);
+  line-height: 1.8em;
+}
+.brand .brand2 {
+  margin-top: 6em;
+}
+.brand .brand3 {
+  margin-top: 12em;
+}
+
+.boost {
+  background-image: url(../../images/bg-boost-desktop.svg);
+  background-color: hsl(257, 27%, 26%);
+  -o-object-fit: fill;
+     object-fit: fill;
+  width: 100%;
+  height: 9.5em;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #ffffff;
+  font-size: 1.65em;
+  font-weight: bolder;
+  margin-top: 100px;
+  text-align: center;
+}
+.boost button {
+  border: none;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(180, 66%, 49%);
+  font-weight: 700;
+  border-radius: 30px;
+  color: #ffffff;
+  cursor: pointer;
+  width: 9em;
+  height: 2.8em;
+  font-size: 0.8em;
+}
+.boost button:hover {
+  opacity: 0.7;
+}
+.boost button:active {
+  opacity: 1;
+}
+.boost button:hover {
+  opacity: 1;
+  background-color: hsl(180, 52%, 68%);
+}
+.boost button:active {
+  background-color: hsl(180, 66%, 49%);
+}
+
+@media screen and (max-width: 700px) {
+  .advanced {
+    width: 85%;
+  }
+  .line {
+    position: absolute;
+    width: 50em;
+    height: 0.5em;
+    transform: rotate(90deg);
+  }
+  .brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0;
+    justify-content: center;
+    width: 80%;
+    margin-top: 7em;
+  }
+  .brand .image {
+    width: 6.5em;
+    height: 6.5em;
+    margin-top: -70px;
+    margin-bottom: 30px;
+  }
+  .brand .image img {
+    width: 3em;
+  }
+  .brand .card {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+    padding: 3.5em 1.5em;
+    margin-top: 0em;
+  }
+  .brand .card h2 {
+    font-size: 1.6em;
+    margin-bottom: 0.7em;
+  }
+  .brand .card p {
+    font-size: 1.2em;
+    line-height: 1.9em;
+    text-align: center;
+    width: 85%;
+  }
+  .brand .brand2 {
+    margin-top: 7em;
+  }
+  .brand .brand3 {
+    margin-top: 7em;
+  }
+  .boost {
+    background-image: url(../../images/bg-boost-mobile.svg);
+    height: 7em;
+    justify-content: space-between;
+    padding: 5em 0em;
+  }
+  .boost button {
+    width: 10em;
+    height: 3em;
+    font-size: 0.9em;
+    margin: 0;
+  }
+  .boost button:hover {
+    opacity: 1;
+    background-color: hsl(180, 52%, 68%);
+  }
+  .boost button:active {
+    background-color: hsl(180, 66%, 49%);
+  }
+}/*# sourceMappingURL=statistics.css.map */

@@ -1,0 +1,230 @@
+@import '../../style/App';
+
+.wrapper {
+    background-color: $grayish-violent-background;
+    @include flex-container;
+    flex-direction: column;
+    width: 100%;
+}
+
+.shorten {
+    background-image: url(../../images/bg-shorten-desktop.svg);
+    object-fit: fill;
+    background-color: $dark-violent;
+    width: 70%;
+    border-radius: 10px;
+    @include flex-container;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 3.3em 4em 2.3em 4em;
+    margin-top: -5em;
+
+    .input {
+        width: 77%;
+
+        input {
+            position: relative;
+            border: none;
+            border-radius: 5px;
+            background-color: $color-white;
+            outline: none;
+            padding: .8em;
+            width: calc(100% - 2.2em);
+            font-size: 1.4em;
+
+            &.error::placeholder {
+                color: $color-red;
+                opacity: .5;
+            }
+
+            &.error {
+                outline: 2px solid $color-red
+            }
+        }
+    }
+
+    button { 
+        @include button;
+        width: 20%;
+        height: 3.4em;
+        border-radius: 7px;
+        margin: 0;
+        font-size: 1.1em;
+
+        &:hover {
+            opacity: 1;
+            background-color: hsl(180, 52%, 68%);
+        }
+
+        &:active {
+            background-color: $color-cyan;
+        }
+    }
+}
+
+.op {
+    height: 1em;
+    opacity: 0;
+    transition: .5s;
+}
+
+.op.error {
+    opacity: 1;
+}
+
+.get-url {
+    background-color: $color-white;
+    width: calc(70% + 5em);
+    border-radius: 10px;
+    @include flex-container;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 1.5em;
+    margin-top: 30px;
+
+    .initial {
+        position: relative;
+        border: none;
+        font-size: 1.2em;
+        width: 50%;
+        word-break: break-word;
+    }
+
+    .finial {
+        position: relative;
+        @include flex-container;
+        justify-content: space-between;
+        width: 45%;
+
+        p {
+            display: flex;
+            justify-content: end;
+            width: 70%;
+            margin-right: 20px;
+            word-break: break-word;
+            color: $color-cyan;
+            font-size: 1.2em;
+        }
+
+        button { 
+            @include button;
+            width: 30%;
+            height: 2.5em;
+            border-radius: 7px;
+            margin: 0;
+            font-size: 1.1em;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}
+
+.get-url.active {
+    display: flex;
+}
+
+
+small.error {
+        font-style: italic;
+        color: $color-red;
+        text-align: start;
+        font-size: 1em;
+        display: block;
+        margin-top: 3px;
+        opacity: 1;
+        transition: .5;
+    }
+
+@media screen and (max-width: 700px) {
+    .shorten {
+        background-image: url(../../images/bg-shorten-mobile.svg);
+        width: 76%;
+        height: 13em;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2.5em;
+        margin-top: -9em;
+
+        .input {
+            width: 100%;
+
+            input {
+                border-radius: 5px;
+                width: calc(100% - 1.6em);
+                font-size: 1.6em;
+                padding: 0.8em;
+                font-family: $font-poppins;
+            }
+        }
+
+        button { 
+            @include button;
+            width: 100%;
+            border-radius: 5px;
+            height: 3.1em;
+            margin: 0;
+            font-size: 1.6em;
+
+            &:hover {
+                opacity: 1;
+                background-color: hsl(180, 52%, 68%);
+            }
+
+            &:active {
+                background-color: $color-cyan;
+            }
+        }
+    }
+
+    small.error {
+        font-size: 1.3em;
+    }
+
+    .get-url {
+        width: calc(80% + 3em);
+        @include flex-container;
+        display: none;
+        flex-direction: column;
+        align-items: baseline;
+        padding: 1.5em 0em;
+        margin-top: 30px;
+    
+        .initial {
+            width: calc(100% - 2em);
+            border-bottom: .5px solid $color-gray;
+            padding: 0em 1em .8em 1em;
+            font-size: 1.5em;
+        }
+    
+        .finial {
+            position: relative;
+            display: block;
+            width: 100%;
+            padding: 1em 1.3em 0em 1.3em;
+    
+            p {
+                display: flex;
+                justify-content: start;
+                width: calc(100% - 1.6em);
+                margin-right: 0px;
+                word-break: break-word;
+                color: $color-cyan;
+                font-size: 1.6em;
+            }
+    
+            button { 
+                @include button;
+                width: calc(100% - 1.7em);
+                height: 2.5em;
+                border-radius: 5px;
+                margin: 0;
+                margin-top: 15px;
+                font-size: 1.5em;
+            }
+        }
+    }
+}

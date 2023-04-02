@@ -1,0 +1,219 @@
+@import '../../style/App';
+
+.nav-container {
+    background-color: $color-white;
+    @include flex-container;
+    padding: $page-padding;  
+    font-weight: $bolder;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 10%;
+    margin-top: .6em;
+
+    img {
+        width: 9em;
+    }
+}
+
+.hambuger {
+    display: none;
+    filter: invert(60%);
+    width: 25px;
+    margin-top: -.6em;
+}
+
+.nav-bar {
+    @include flex-container;
+    justify-content: space-between;
+    width: 90%
+}
+
+.nav-item {
+    margin-left: 4em;
+    width: 17em;
+
+    ul {
+        @include flex-container;
+        justify-content: space-between;
+        list-style: none;
+        color: $grayish-violent;
+
+        li {
+            font-size: 1em;
+        }
+
+        a {
+            color: $grayish-violent;
+            text-decoration: none;
+
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}
+
+.auth {
+    width: 60%;
+    @include flex-container;
+    justify-content: end;
+
+    a {
+        color: $grayish-violent;
+        text-decoration: none;
+        margin-left: 2em;
+
+        &:hover{
+            color: black;
+        }
+    }
+}
+
+button {
+    @include button;
+    width: 8em;
+    height: 2.8em;
+
+    &:active{
+        opacity: 1;
+    } 
+}
+
+//responsiveness
+@media screen and (max-width: 1200px) {
+    .nav-item {
+        margin-left: 5em;
+        width: 18em;
+    }
+}
+
+//mobile view
+@media screen and (max-width: 700px) {
+    .nav-container {
+        @include flex-container;
+        padding: 3em .5em;  
+        font-weight: $bolder;
+        justify-content: center;
+        font-size: 1.5em;
+    }
+    
+    .logo {
+        position: absolute;
+        @include flex-container;
+        justify-content: space-between;
+        width: 90%;
+        margin-top: .6em;
+
+        .hambuger {
+            display: block;
+            width: 1.8em;
+        }
+
+        .hambuger.active {
+            opacity: .3;
+        }
+    }
+    
+    .nav-bar {
+        position: absolute;
+        background-color: $dark-violent;
+        opacity: 0;
+        justify-content: center;
+        width: 90%;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 2.5em 0 .5em 0;
+        margin-top: 32em;
+        pointer-events: none;
+        transition: .5s;
+    }
+
+    .nav-bar.show {
+        opacity: 1;
+        pointer-events: visible;
+    }
+    
+    .nav-item {
+        margin-left: 0em;
+        width: 90%;
+        border-bottom: solid 1px $grayish-violent;
+        padding-bottom: 2em;
+    
+        ul {
+            @include flex-container;
+            list-style: none;
+            color: $color-white;
+            flex-direction: column;
+    
+            li {
+                font-size: 1em;
+                line-height: 3.3em;
+            }
+
+            a {
+                color: $color-white;
+
+                &:hover{
+                    color: $grayish-violent;
+                    font-size: 1.05em;
+                }
+            }
+            
+        }
+    }
+    
+    .auth {
+        width: 100%;
+        @include flex-container;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 2.4em;
+    
+        button {
+            width: 90%;
+            @include button;
+            height: 3.2em;
+            margin: 0;
+
+            &:hover {
+                opacity: 1;
+                background-color: hsl(180, 52%, 68%);
+            }
+        }
+
+        a {
+            width: 100%;
+            color: $color-white;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 2em;
+            margin-left: 0em;
+
+            &.login {
+                width: 3em;
+                padding-bottom: 5px;
+                border-bottom: solid 1.5px transparent;
+            
+                &:hover{
+                    color: $grayish-violent;
+                    border-bottom: solid 1.5px $grayish-violent;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        img {
+            width: 8.5em;
+        }
+
+        .hambuger {
+            width: 1.7em;
+        }
+    }
+}

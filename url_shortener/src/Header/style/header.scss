@@ -1,0 +1,118 @@
+@import '../../style/App';
+
+.container {
+    background-color: $color-white;
+    @include flex-container;
+    justify-content: space-between;
+    height: 33em;
+    padding-bottom: 6.5em;
+}
+
+.content {
+    //border: solid 2px $color-$color-red;
+    width: 40%;
+    margin-left: 7.8em;
+
+    h1 {
+        font-size: 4em;
+        line-height: 1.1em;
+        font-weight: bolder;
+    }
+
+    p {
+        font-size: 1.3em;
+        color: $grayish-violent;
+        line-height: 1.6em;
+        margin: 0 0 1.8em 0;
+    }
+
+    button {
+        @include button;
+        border-radius: 50px;
+        width: 10em;
+        height: 3em;
+        font-size: 1.3em;
+        margin: 0;
+    }
+}
+
+.illustration {
+    width: 50%;
+    //border: solid 2px $color-$color-red; 
+    margin-right: -3em;
+
+    img {
+        width: 45em;
+    }
+}
+
+.mobile {
+    display: none;
+}
+
+.desktop {
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        background-color: $color-white;
+        @include flex-container;
+        justify-content: space-between;
+        height: inherit;
+        flex-direction: column;
+        padding: $padding-mobile;
+        padding-bottom: 15em;
+    }
+    
+    .content {
+        //border: solid 2px $color-$color-red;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5em;
+        text-align: center;
+    
+        p {
+            margin: .5em 0 1.8em 0;
+            font-size: 1.8em;
+        }
+
+        button {
+            width: 11em;
+            font-size: 1.9em;
+        }
+    }
+    
+    .illustration {
+        width: 100%;
+
+        img {
+            width: 60em;
+        }
+    }
+
+    .mobile {
+        display: block;
+    }
+    
+    .desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .illustration {
+
+        img {
+            width: 55em;
+            margin-left: -20px;
+        }
+    }
+
+    .content {
+        h1 {
+            font-size: 4.3em;
+        }
+
+    }
+}
