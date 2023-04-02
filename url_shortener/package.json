@@ -2,7 +2,6 @@
   "name": "url-shortening",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://buberrie.github.io/url-shortening",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -15,6 +14,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "http://buberrie.github.io/url_shortening",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
