@@ -50,11 +50,6 @@ $bolder: 700;
   $page-padding: 3em 7.8em;
   $padding-mobile: 0 2em;
 
-  body {
-    overflow-x: hidden;
-    position: relative;
-  }
-
 
 //responsiveness
   @media screen and (max-width: 1200px)  {
