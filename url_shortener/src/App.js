@@ -1,9 +1,9 @@
 import './style/App.css'
 import React, {useState, useEffect, useRef} from 'react';
-import NavBar from './NavBar/NavBar';
-import Header from './Header/Header';
-import Statistics from './Statistics/Statistics';
-import Footer from './Footer/Footer';
+import NavBar from './components/NavBar/NavBar';
+import Header from './components/Header/Header';
+import Statistics from './components/Statistics/Statistics';
+import Footer from './components/Footer/Footer';
 import logo from './images/logo.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

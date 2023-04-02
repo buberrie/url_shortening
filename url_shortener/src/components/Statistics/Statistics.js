@@ -1,7 +1,7 @@
 import './style/statistics.css'
-import Recognition from '../images/icon-brand-recognition.svg';
-import Records from '../images/icon-detailed-records.svg';
-import Customizale from '../images/icon-fully-customizable.svg'
+import Recognition from '../../images/icon-brand-recognition.svg';
+import Records from '../../images/icon-detailed-records.svg';
+import Customizale from '../../images/icon-fully-customizable.svg'
 import GetUrl from '../getUrl/GetUrl';
 
 const Statistics = () => {

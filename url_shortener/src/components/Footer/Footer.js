@@ -1,9 +1,9 @@
 import React from 'react'
 import './style/footer.css'
-import instagram from '../images/icon-instagram.svg'
-import facebook from '../images/icon-facebook.svg'
-import pinterest from '../images/icon-pinterest.svg'
-import twitter from '../images/icon-twitter.svg'
+import instagram from '../../images/icon-instagram.svg'
+import facebook from '../../images/icon-facebook.svg'
+import pinterest from '../../images/icon-pinterest.svg'
+import twitter from '../../images/icon-twitter.svg'
 
 const Footer = (props) => {
   return (

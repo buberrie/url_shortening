@@ -1,6 +1,6 @@
 import React from 'react'
 import './style/header.css'
-import illustration from '../images/illustration-working.svg'
+import illustration from '../../images/illustration-working.svg'
 
 const Header = () => {
   return (

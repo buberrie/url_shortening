@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style/nav-bar.css"
-import hamburger from '../images/hamburger.png';
+import hamburger from '../../images/hamburger.png';
 
 const NavBar = (props) => {
 

@@ -1,4 +1,4 @@
-@import '../../style/App';
+@import '../../../style/App';
 
 .wrapper {
     background-color: $grayish-violent-background;
@@ -8,7 +8,7 @@
 }
 
 .shorten {
-    background-image: url(../../images/bg-shorten-desktop.svg);
+    background-image: url(../../../images/bg-shorten-desktop.svg);
     object-fit: fill;
     background-color: $dark-violent;
     width: 70%;
@@ -141,7 +141,7 @@ small.error {
 
 @media screen and (max-width: 700px) {
     .shorten {
-        background-image: url(../../images/bg-shorten-mobile.svg);
+        background-image: url(../../../images/bg-shorten-mobile.svg);
         width: 76%;
         height: 13em;
         flex-direction: column;

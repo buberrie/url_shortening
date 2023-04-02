@@ -1,4 +1,4 @@
-@import '../../style/App';
+@import '../../../style/App'; //'../../style/App';
 
 footer {
     @include flex-container;

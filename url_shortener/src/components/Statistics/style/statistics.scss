@@ -1,4 +1,4 @@
-@import '../../style/App';
+@import '../../../style/App';
 
 section {
     background-color: $grayish-violent-background;
@@ -84,7 +84,7 @@ section {
 }
 
 .boost {
-    background-image: url(../../images/bg-boost-desktop.svg);
+    background-image: url(../../../images/bg-boost-desktop.svg);
     background-color: $dark-violent;
     object-fit: fill;
     width: 100%;
@@ -177,7 +177,7 @@ section {
     }
     
     .boost {
-        background-image: url(../../images/bg-boost-mobile.svg);
+        background-image: url(../../../images/bg-boost-mobile.svg);
         height: 7em;
         justify-content: space-between;
         padding: 5em 0em;
