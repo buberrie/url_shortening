@@ -50,6 +50,11 @@ $bolder: 700;
   $page-padding: 3em 7.8em;
   $padding-mobile: 0 2em;
 
+  .wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    position: fixed;
+  }
 
 //responsiveness
   @media screen and (max-width: 1200px)  {
