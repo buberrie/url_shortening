@@ -57,6 +57,7 @@ section {
   padding: 3em 7.8em;
   justify-content: space-between;
   margin-top: -2em;
+  overflow-x: hidden;
 }
 .brand .image {
   display: flex;
@@ -162,7 +163,6 @@ section {
     justify-content: center;
     width: calc(80% + 2em);
     margin-top: 7em;
-    overflow-x: hidden;
   }
   .brand .image {
     width: 6.5em;

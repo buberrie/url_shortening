@@ -64,11 +64,11 @@
 
 .illustration {
   width: 50%;
-  margin-right: -3em;
   overflow-x: hidden;
 }
 .illustration img {
   width: 45em;
+  margin-left: 3em;
 }
 
 .mobile {

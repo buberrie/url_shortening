@@ -40,6 +40,7 @@ section {
     padding: $page-padding;
     justify-content: space-between;
     margin-top: -2em;
+    overflow-x: hidden;
     
     .image {
         @include flex-container;
@@ -134,8 +135,6 @@ section {
         justify-content: center;
         width: calc(80% + 2em);
         margin-top: 7em;
-        overflow-x: hidden;
-
     
         .image {
             width: 6.5em;
