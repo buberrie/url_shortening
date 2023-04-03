@@ -40,7 +40,7 @@ section {
     padding: $page-padding;
     justify-content: space-between;
     margin-top: -2em;
-
+    
     .image {
         @include flex-container;
         background-color: $dark-violent;
@@ -130,10 +130,12 @@ section {
         position: relative;
         @include flex-container;
         flex-direction: column;
-        padding: 0;
+        padding: 3.8em 10px 5px 10px;
         justify-content: center;
-        width: 80%;
+        width: calc(80% + 2em);
         margin-top: 7em;
+        overflow-x: hidden;
+
     
         .image {
             width: 6.5em;
@@ -149,7 +151,7 @@ section {
         .card {
             @include flex-container;
             flex-direction: column;
-            width: 100%;
+            width: 95%;
             height: inherit;
             padding: 3.5em 1.5em;
             margin-top: 0em;

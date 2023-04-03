@@ -158,10 +158,11 @@ section {
     font-family: "Poppins", sans-serif;
     justify-content: space-evenly;
     flex-direction: column;
-    padding: 0;
+    padding: 3.8em 10px 5px 10px;
     justify-content: center;
-    width: 80%;
+    width: calc(80% + 2em);
     margin-top: 7em;
+    overflow-x: hidden;
   }
   .brand .image {
     width: 6.5em;
@@ -178,7 +179,7 @@ section {
     font-family: "Poppins", sans-serif;
     justify-content: space-evenly;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: inherit;
     padding: 3.5em 1.5em;
     margin-top: 0em;

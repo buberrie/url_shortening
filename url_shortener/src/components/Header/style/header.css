@@ -108,6 +108,7 @@
   }
   .illustration {
     width: 100%;
+    margin-right: -3.8em;
   }
   .illustration img {
     width: 60em;
