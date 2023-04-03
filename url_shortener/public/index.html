@@ -22,5 +22,12 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      var scrollEventHandler = function() {
+        window.scroll(0, window.pageYOffset || document.documentElement.scrollLeft)
+      }
+
+      window.addEventListener("scroll", scrollEventHandler, false)
+    </script>
   </body>
 </html>
