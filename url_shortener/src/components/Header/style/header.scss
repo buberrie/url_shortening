@@ -38,8 +38,9 @@
 
 .illustration {
     width: 50%;
-    //border: solid 2px $color-$color-red; 
+    //border: solid 2px $color-red;
     margin-right: -3em;
+    overflow-x: hidden;
 
     img {
         width: 45em;
@@ -102,10 +103,11 @@
 
 @media screen and (max-width: 400px) {
     .illustration {
+        width: 100%;
 
         img {
             width: 55em;
-            margin-left: -20px;
+            margin-left: -5em;
         }
     }
 

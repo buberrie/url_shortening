@@ -15,7 +15,7 @@ const Statistics = () => {
       </div>
       <div className="line"></div>
       <div className="brand">
-        <div className="brand1 card" data-aos="fade-left">
+        <div className="brand1 card">
           <div className="image">
             <img src={Recognition} alt="" />
           </div>
@@ -25,7 +25,7 @@ const Statistics = () => {
             mean a thing. Branded links help instil confidence in your content.
           </p>
         </div>
-        <div className="brand2 card" data-aos="fade-right">
+        <div className="brand2 card" >
           <div className="image">
             <img src={Records} alt="" />
           </div>
@@ -35,7 +35,7 @@ const Statistics = () => {
             people engage with your content helps inform better decisions.
           </p>
         </div>
-        <div className="brand3 card" data-aos="fade-left">
+        <div className="brand3 card">
           <div className="image">
             <img src={Customizale} alt="" />
           </div>

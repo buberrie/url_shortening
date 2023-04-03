@@ -65,6 +65,7 @@
 .illustration {
   width: 50%;
   margin-right: -3em;
+  overflow-x: hidden;
 }
 .illustration img {
   width: 45em;
@@ -119,9 +120,12 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .illustration {
+    width: 100%;
+  }
   .illustration img {
     width: 55em;
-    margin-left: -20px;
+    margin-left: -5em;
   }
   .content h1 {
     font-size: 4.3em;
