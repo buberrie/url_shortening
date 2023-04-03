@@ -14,8 +14,15 @@
     font-size: 10px;
   }
 }
+html body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+element {
+  width: 100vw;
+}
+
 body {
   background-color: hsl(260, 8%, 14%);
-  overflow-x: hidden;
-  width: 100%;
 }/*# sourceMappingURL=index.css.map */

@@ -35,7 +35,7 @@ function App() {
    }, [])
 
   return (
-    <div className='wrapper'>
+    <div >
       <NavBar img={logo} onShow={onShow} btnRef={btnRef} navShow={navShow}/>
       <Header />
       <Statistics />
