@@ -34,6 +34,7 @@ const Footer = (props) => {
           <a href="https://twitter.com/gloria_oluebube" target='_blank' rel='noreferrer'><img src={twitter} alt="" /></a>
           <a href="https://pintrest.com" target='_blank' rel='noreferrer'><img src={pinterest} alt="" /></a>
           <a href="https://instagram.com/bubecodes" target='_blank' rel='noreferrer'><img src={instagram} alt="" /></a>
+          <p className='footer'> Copyright &copy; {`2022 - ${new Date().getFullYear()}`} <span >coded by <a href="https://github.com/Buberrie" target="blank" style={{color: "rgb(14, 1, 35)"}}>Bubecodes</a></span></p>
         </div>
     </footer>
   )
